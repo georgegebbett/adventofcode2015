@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Day4 {
-    public static void main(String[] args) {
+    public static void main() {
         File inputFile = new File("/Users/george/IdeaProjects/adventofcode2015/src/com/georgegebbett/days/day4/input.txt");
 
         if (inputFile.exists()) {
