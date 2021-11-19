@@ -7,12 +7,17 @@ import java.security.NoSuchAlgorithmException;
 
 public class Day5 {
 
-    public static void main() throws NoSuchAlgorithmException {
-        Part1Cracker part1 = new Part1Cracker();
-        Part2Cracker part2 = new Part2Cracker();
+    public static void main() {
 
-        part1.doCrack("uqwqemis");
-        part2.doCrack("uqwqemis");
+        try {
+            Part1Cracker part1 = new Part1Cracker();
+            Part2Cracker part2 = new Part2Cracker();
+
+            part1.doCrack("uqwqemis");
+            part2.doCrack("uqwqemis");
+        } catch (NoSuchAlgorithmException e) {
+            System.out.println(e);
+        }
 
     }
 
