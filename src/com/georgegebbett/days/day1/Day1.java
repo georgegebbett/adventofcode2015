@@ -38,6 +38,8 @@ public class Day1 {
                                 return;
                             }
                             break;
+                        default:
+                            throw new IllegalStateException(partChoice + " is not a valid part");
                     }
                 }
                 System.out.println(String.format("You have moved %d blocks horizontally and %d blocks vertically.", tracker.getHOffset(), tracker.getVOffset()));

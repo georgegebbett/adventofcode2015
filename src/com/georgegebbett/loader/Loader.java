@@ -2,6 +2,7 @@ package com.georgegebbett.loader;
 
 import com.georgegebbett.days.day1.Day1;
 import com.georgegebbett.days.day2.Day2;
+import com.georgegebbett.days.day3.Day3;
 
 import java.util.Scanner;
 
@@ -19,6 +20,11 @@ public class Loader {
             case 2:
                 Day2.main();
                 break;
+            case 3:
+                Day3.main();
+                break;
+            default:
+                throw new IllegalStateException(day + " is not a valid day");
         }
     }
 
